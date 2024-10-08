@@ -1,0 +1,169 @@
+/* Estilo Geral */
+body {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: linear-gradient(to bottom right, #000000, #353434); /* Degradê */
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    background-color: rgba(19, 19, 19, 0.8);
+    border-bottom: 2px solid #ff9800;
+    height: 60px;
+}
+
+h1 {
+    font-size: 2.6rem;
+    color: #fff;
+}
+
+.cor1 {
+    color: #ffffff;
+}
+
+/* Formulário */
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor mais escura e mais opaca */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(53, 53, 53, 0.5);
+    position: relative; /* Adicionado para o posicionamento das formas */
+    z-index: 1; /* Aumenta o z-index do formulário */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #ff9800;
+}
+
+/* Botão de Enviar */
+button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+/* Botão de ir para registrar */
+.botao1 {
+    font-size: 1.1rem;
+    display: inline-block;
+    background-color: transparent;
+    color: #ff9800;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.botao1:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Botão Voltar */
+.botao {
+    font-size: 1.1rem;
+    display: inline-block;
+    background-color: transparent;
+    color: #ff9800;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Estilo do Resultado */
+#message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Formas geométricas de fundo */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: 0; /* Mantenha um z-index menor para as formas */
+}
+
+.shape1 {
+    width: 200px;
+    height: 200px;
+    background: #ff9800;
+    top: 50px;
+    left: 20%;
+}
+
+.shape2 {
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    top: 150px;
+    right: 15%;
+}
+
+.shape3 {
+    width: 150px;
+    height: 150px;
+    background: #ff9800;
+    bottom: 100px;
+    left: 30%;
+}
+
+.shape4 {
+    width: 250px;
+    height: 250px;
+    background: #e0e0e0;
+    bottom: 150px;
+    right: 20%;
+}

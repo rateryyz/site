@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-login-register/stylesregister.css" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="cor1">Registro de Usuário</h1>
+    </header>
+
+    <main>
+      <div id="message">
+      </div>
+
+      <form id="registerForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="gender">Gênero:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Selecione</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Outro">Outro</option>
+        </select>
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" required />
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Registrar</button> 
+      </form>
+      <a class="botao" href="/meu_projeto_dieta/index/index.html">Voltar</a>
+      <a class="botao1" href="login.html">Já tem conta? Faça login!</a>
+    </main>
+
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+    <div class="shape shape4"></div>
+
+    <script src="scriptlogin.js"></script>
+  </body>
+</html>

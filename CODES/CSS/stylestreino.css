@@ -1,0 +1,177 @@
+/* Estilo Geral */
+body {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: url("/meu_projeto_dieta/imagens/imagem3.png") no-repeat center
+    center fixed; /* Substitua pela sua imagem */
+  background-size: cover;
+  color: white;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 625px;
+  background-color: rgba(19, 19, 19, 0.8);
+  border-bottom: 2px solid #ff9800;
+  height: 60px;
+}
+
+h1 {
+  font-size: 2.6rem;
+  color: #fff;
+}
+
+.cor1 {
+  color: #ffffff;
+}
+
+.cor2 {
+  color: #ff9800;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Camada escura */
+  z-index: 1;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.botao {
+  display: inline-block;
+  background-color: transparent;
+  color: #ff9800;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid #ff9800;
+  border-radius: 5px;
+  margin-top: 150px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index:2;
+}
+
+.botao:hover {
+  background-color: #ff9800;
+  color: white;
+}
+
+.inscreva-se {
+  padding: 10px 15px;
+  font-size: 1.2rem; 
+  border: 2px solid #ff9800; 
+  border-radius: 5px;
+  color: #ff9800;
+  background-color: transparent;
+  transition: all 0.3s;
+  margin-left: 20px; 
+  margin-bottom: 60px;
+}
+
+.inscreva-se:hover {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+.muscle-selection {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative; /* Para manter a camada sobreposta */
+  z-index: 3; /* Coloca o texto na frente da camada escura */
+}
+
+.cor1 {
+  color: #ffffff;
+}
+
+.cor2 {
+  color: #ff9800;
+  margin-left: 0;
+}
+
+/* Carrossel */
+.carousel {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%; /* Cada item ocupa 100% da largura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-button {
+  background-color: rgba(255, 152, 0, 0.8);
+  border: none;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Botões */
+.button {
+  background-color: #ff9800; /* Cor de fundo do botão */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 25px; /* Bordas arredondadas */
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: block; /* Permite que o botão ocupe o espaço inteiro do item do carrossel */
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #e68a00; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Efeito de crescimento */
+}
+
+/* Rodapé */
+footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(19, 19, 19, 0.8);
+}

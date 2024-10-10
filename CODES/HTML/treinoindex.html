@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymApp</title>
+    <link rel="stylesheet" href="/meu_projeto_dieta/treinos/index-treino/css-treino/stylestreino.css">
+</head>
+<body>
+    <header>
+        <header>
+            <h1><span class="cor1">Gym</span><span class="cor2">App</span></h1>
+        </header>
+      </nav>
+    </header>
+    <main>
+        <div class="overlay"></div> <!-- Camada escura -->
+        <h2 class="muscle-selection">Escolha um grupo muscular para treinar:</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="/meu_projeto_dieta/treinos/classes-de-treino/costas-conjunto/costas.html" class="button">Costas</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/meu_projeto_dieta/treinos/classes-de-treino/peito-conjunto/peito.html" class="button">Peito</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/meu_projeto_dieta/treinos/classes-de-treino/pernas-conjunto/pernas.html" class="button">Pernas</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/meu_projeto_dieta/treinos/classes-de-treino/bracos-conjunto/bracos.html" class="button">Braços</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/meu_projeto_dieta/treinos/classes-de-treino/abdomen-conjunto/abdomen.html" class="button">Abdômen</a>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <a href="/meu_projeto_dieta/index/index.html" class="botao">Voltar para a Página Principal</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GymApp</p>
+    </footer>
+
+    <script src="/meu_projeto_dieta/treinos/index-treino/treinoscript.js"></script>
+</body>
+</html>

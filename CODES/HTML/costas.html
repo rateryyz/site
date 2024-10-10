@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym App</title>
+    <link rel="stylesheet" href="/meu_projeto_dieta/treinos/classes-de-treino/costas-conjunto/css/costas.css">
+</head>
+<body>
+    <header>
+            <h1><span class="cor1">Gym</span><span class="cor2">App</span></h1>
+    </header>
+
+    <main>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="changeMuscle(-1)">&#10094;</button>
+            <div class="carousel-inner">
+                <div class="carousel-item" data-muscle="trapézio">
+                    <h2>Trapézio</h2>
+                </div>
+                <div class="carousel-item" data-muscle="romboide">
+                    <h2>Romboide</h2>
+                </div>
+                <div class="carousel-item" data-muscle="latíssimo">
+                    <h2>Latíssimo</h2>
+                </div>
+                <div class="carousel-item" data-muscle="dorsal">
+                    <h2>Dorsal</h2>
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="changeMuscle(1)">&#10095;</button>
+        </div>
+
+        <div class="muscle-selected">
+            <h3>Músculo Selecionado: <span id="selected-muscle">Trapézio</span></h3>
+        </div>
+
+        <div class="videos-section" id="video-container">
+            <!-- Vídeos do trapézio -->
+            <div class="video-grid trapézio">
+                <iframe src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video3" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video5" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video6" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- Vídeos do romboide -->
+            <div class="video-grid romboide" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video7" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video8" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video9" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video10" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video11" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video12" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- Vídeos do latíssimo -->
+            <div class="video-grid latíssimo" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video13" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video14" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video15" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video16" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video17" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video18" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- Vídeos do dorsal -->
+            <div class="video-grid dorsal" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video19" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video20" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video21" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video22" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video23" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video24" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <a href="/meu_projeto_dieta/treinos/index-treino/treinoindex.html" class="botao">Voltar</a>
+    <main>
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+
+    <footer>
+        <p>&copy; 2024 GymApp</p>
+    </footer>
+
+    <script src="/meu_projeto_dieta/treinos/classes-de-treino/costas-conjunto/js/costas.js"></script>
+</body>
+</html>

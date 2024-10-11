@@ -300,3 +300,9 @@ main {
   max-width: 100%;
   border-radius: 8px; 
 }
+footer {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+  }

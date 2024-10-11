@@ -1,6 +1,6 @@
 /* Estilo Geral */
 body {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
   position: relative;
@@ -185,4 +185,12 @@ button:hover {
   bottom: 150px;
   right: 20%;
   z-index: 1;
+}
+footer {
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
 }

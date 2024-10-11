@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos Pernas</title>
+    <link rel="stylesheet" href="/meu_projeto_dieta/treinos/classes-de-treino/pernas-conjunto/css/pernasstyle.css">
+</head>
+<body>
+    <header>
+            <h1><span class="cor1">GYM</span><span class="cor2">APP</span></h1>
+    </header>
+
+    <main>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="changeMuscle(-1)">&#10094;</button>
+            <div class="carousel-inner">
+                <div class="carousel-item" data-muscle="Quadriceps">
+                    <h2>Quadríceps</h2>
+                </div>
+                <div class="carousel-item" data-muscle="Posterior de coxas">
+                    <h2>Posterior de coxas</h2>
+                </div>
+                <div class="carousel-item" data-muscle="Gluteos">
+                    <h2>Glúteos</h2>
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="changeMuscle(1)">&#10095;</button>
+        </div>
+
+        <div class="muscle-selected">
+            <h3>Músculo Selecionado: <span id="selected-muscle"></span></h3>
+        </div>
+
+        <div class="videos-section" id="video-container">
+            <div class="video-grid Quadriceps">
+                <iframe src="https://www.youtube.com/embed/video43" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video44" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video45" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video46" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video47" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video48" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-grid Posterior de coxa" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video49" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video50" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video51" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video52" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video53" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video54" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-grid Gluteos" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video55" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video56" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video57" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video58" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video59" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video60" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </main>
+    <a href="/meu_projeto_dieta/treinos/index-treino/treinoindex.html" class="botao">Voltar</a>
+    <main>
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+
+    <footer>
+        <p>&copy; 2024 GymApp</p>
+    </footer>
+
+    <script src="/meu_projeto_dieta/treinos/classes-de-treino/pernas-conjunto/js/perna.js"></script>
+</body>
+</html>

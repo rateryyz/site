@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos Pernas</title>
+    <link rel="stylesheet" href="/meu_projeto_dieta/treinos/classes-de-treino/bracos-conjunto/css/bracosstyle.css">
+</head>
+<body>
+    <header>
+            <h1><span class="cor1">GYM</span><span class="cor2">APP</span></h1>
+    </header>
+
+    <main>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="changeMuscle(-1)">&#10094;</button>
+            <div class="carousel-inner">
+                <div class="carousel-item" data-muscle="Biceps">
+                    <h2>Bíceps</h2>
+                </div>
+                <div class="carousel-item" data-muscle="Triceps">
+                    <h2>Tríceps</h2>
+                </div>
+                <div class="carousel-item" data-muscle="Ombro">
+                    <h2>Ombro</h2>
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="changeMuscle(1)">&#10095;</button>
+        </div>
+
+        <div class="muscle-selected">
+            <h3>Músculo Selecionado: <span id="selected-muscle"></span></h3>
+        </div>
+
+        <div class="videos-section" id="video-container">
+            <div class="video-grid Biceps">
+                <iframe src="https://www.youtube.com/embed/video61" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video62" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video63" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video64" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video65" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video66" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-grid triceps" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video67" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video68" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video69" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video70" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video71" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video72" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-grid Ombros" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video73" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video74" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video75" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video76" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video77" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video78" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </main>
+    <a href="/meu_projeto_dieta/treinos/index-treino/treinoindex.html" class="botao">Voltar</a>
+    <main>
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+
+    <footer>
+        <p>&copy; 2024 GymApp</p>
+    </footer>
+
+    <script src="/meu_projeto_dieta/treinos/classes-de-treino/bracos-conjunto/js/bracos.js"></script>
+</body>
+</html>

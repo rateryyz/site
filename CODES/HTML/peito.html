@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinos peito</title>
+    <link rel="stylesheet" href="/meu_projeto_dieta/treinos/classes-de-treino/peito-conjunto/css/peitostyle.css">
+</head>
+<body>
+    <header>
+            <h1><span class="cor1">GYM</span><span class="cor2">APP</span></h1>
+    </header>
+
+    <main>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="changeMuscle(-1)">&#10094;</button>
+            <div class="carousel-inner">
+                <div class="carousel-item" data-muscle="Parte Clavicular (Superior)">
+                    <h2>Parte Clavicular (Superior)</h2>
+                </div>
+                <div class="carousel-item" data-muscle="Parte Esternal (Medial)">
+                    <h2>Parte Esternal (Medial)</h2>
+                </div>
+                <div class="carousel-item" data-muscle="Parte Abdominal (Inferior)">
+                    <h2>Parte Abdominal (Inferior)</h2>
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="changeMuscle(1)">&#10095;</button>
+        </div>
+
+        <div class="muscle-selected">
+            <h3>Músculo Selecionado: <span id="selected-muscle"></span></h3>
+        </div>
+
+        <div class="videos-section" id="video-container">
+            <div class="video-grid Parte Clavicular (Superior)">
+                <iframe src="https://www.youtube.com/embed/video25" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video26" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video27" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video28" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video29" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video30" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-grid Parte Esternal (Medial)" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video31" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video32" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video33" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video34" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video35" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video36" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-grid Parte Abdominal (Inferior)" style="display: none;">
+                <iframe src="https://www.youtube.com/embed/video37" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video38" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video39" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video40" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video41" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/video42" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </main>
+    <a href="/meu_projeto_dieta/treinos/index-treino/treinoindex.html" class="botao">Voltar</a>
+    <main>
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+
+    <footer>
+        <p>&copy; 2024 GymApp</p>
+    </footer>
+
+    <script src="/meu_projeto_dieta/treinos/classes-de-treino/peito-conjunto/js/peito.js"></script>
+</body>
+</html>

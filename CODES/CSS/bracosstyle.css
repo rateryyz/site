@@ -1,0 +1,264 @@
+/* Estilo Geral */
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: o;
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  max-width: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 650px;
+  background-color: rgba(19, 19, 19, 0.8);
+  border-bottom: 2px solid #ff9800;
+  height: 60px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.cor1 {
+  color: white;
+}
+
+.cor2 {
+  color: #ff9800;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Centralização do conteúdo principal */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Carrossel */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; /* Tamanho do carrossel */
+  margin: 20px 0;
+  position: relative;
+}
+
+/* Ajustes para o inner do carrossel */
+.carousel-inner {
+  display: flex;
+  transition: transform 0.4s ease; /* Animação suave */
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Item do carrossel */
+.carousel-item {
+  flex: 0 0 auto; /* Permite o ajuste automático */
+  text-align: center;
+  font-size: 1.2rem; /* Tamanho do texto */
+  padding: 5px; /* Reduzido para menos espaço */
+  box-sizing: border-box;
+  background-color: rgba(255, 152, 0, 0.8); /* Fundo */
+  color: white;
+  border-radius: 65px;
+  margin: 0px auto; /* Menos margem lateral */
+  width: 50%;
+}
+
+/* Botões do carrossel */
+.carousel-button {
+  background-color: #ff9800;
+  border: none;
+  font-size: 1.5rem; /* Tamanho do texto */
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px; /* Tamanho reduzido */
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 152, 0, 0.9);
+  transform: translateY(-50%) scale(1.1); /* Efeito de crescimento ao passar o mouse */
+}
+
+.carousel-button.prev {
+  left: -40px; /* Ajustado para menor distância */
+}
+
+.carousel-button.next {
+  right: -40px; /* Ajustado para menor distância */
+}
+
+/* Seção de músculo selecionado */
+.muscle-selected {
+  margin-left: 20px 0;
+  text-align: center; /* Centraliza o texto */
+}
+
+.muscle-selected h3 {
+  font-size: 1.5rem;
+  color: #ff9800;
+}
+
+/* Seção de vídeos */
+.videos-section {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Seção de músculo selecionado */
+.muscle-selected {
+  margin: 20px 0;
+}
+
+.muscle-selected h3 {
+  font-size: 1.5rem;
+  color: #ff9800;
+}
+
+.botao {
+  display: inline-block;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #ff9800;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid #ff9800;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 2;
+}
+
+.botao:hover {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-container {
+    max-width: 100%;
+  }
+
+  .carousel-button.prev,
+  .carousel-button.next {
+    font-size: 1.5rem;
+    left: -30px;
+    right: -30px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#video-container iframe {
+  margin: 10px 0;
+  border: none; /* Remove a borda padrão dos iframes */
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.shape1 {
+  width: 200px;
+  height: 200px;
+  background: #ff9800;
+  top: 50px;
+  left: 20%;
+}
+
+.shape2 {
+  width: 300px;
+  height: 300px;
+  background: #ffffff;
+  top: 150px;
+  right: 15%;
+}
+
+.shape3 {
+  width: 150px;
+  height: 150px;
+  background: #ff9800;
+  bottom: 100px;
+  left: 30%;
+}
+
+.shape4 {
+  width: 250px;
+  height: 250px;
+  background: #e0e0e0;
+  bottom: 150px;
+  right: 20%;
+}
